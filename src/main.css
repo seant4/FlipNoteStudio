@@ -1,0 +1,16 @@
+canvas{
+    border:1px solid black;
+}
+
+size{
+    background: white;
+    width: 20em;
+    display: none;
+    border-style:solid;
+    padding: 1em;
+    margin: 1em;
+}
+
+[contenteditable]{
+    outline:none;
+}
