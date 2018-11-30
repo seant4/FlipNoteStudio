@@ -9,14 +9,21 @@ let canvasName = size;
 let md = false;
 canvas.addEventListener('mousedown', down);
 canvas.addEventListener('mouseup', toggledraw);
+canvas.addEventListener('mouseout', toggledraw);
 canvas.addEventListener('mousemove', _ =>{
     let mousePos = getMousePos (canvas, _);
     let posx = mousePos.x;
     let posy = mousePos.y;
     draw(canvas, posx, posy, bsize);
 });
-let bsize = 4;
+let bsize = 12;
+
 //----------------------------------------------------------------------------------
+context.beginPath();
+context.rect(0, 0, 2000, 2000);
+context.fillStyle = "White";
+context.fill();
+setColor("Black");
 //Canvas Events------------------------------------------------------------
 function down(){
     md = true;

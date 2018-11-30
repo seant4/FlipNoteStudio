@@ -1,26 +1,41 @@
 canvas{
     background-color: white;
-    border:1px solid black;
+    border:0px solid black;
+    border-radius: 1em;
     position:relative;
-    left: 50px;
+    left: 150px;
 }
 
 div{
     background: white;
     width: 5em;
     display:inline-block;
-    border-style:solid;
+    border-style: 1px solid;
     padding: 1em;
     margin: 1em;
 }
-#name{
-    background-color: white;
-    text-align: center;
+#spacer{
+    position: relative;
+    left: 5px;
+    background-color: orange;
+    padding: 0em;
+    border: orange;
+    width: 40em;
 }
-
-#size{
+#nm{
     background-color: white;
     text-align: center;
+    font-family: sans-serif;
+    border-radius: 1em;
+}
+#size{
+    border-radius: 1em;
+    font-family: sans-serif;
+}
+#colors{
+    display: inline-block;
+    width: 30em;
+    height: 1em;
 }
 
 #bl{
@@ -59,6 +74,33 @@ div{
     position: relative;
     top: 20px;
 }
+#br{
+    background-color: brown;
+    border-style:none;
+    width:.5em;
+    display:inline-block;
+    padding:.5em;
+    position: relative;
+    top: 20px;
+}
+#pr{
+    background-color: purple;
+    border-style:none;
+    width:.5em;
+    display:inline-block;
+    padding:.5em;
+    position: relative;
+    top: 20px;
+}
+#pi{
+    background-color: pink;
+    border-style:none;
+    width:.5em;
+    display:inline-block;
+    padding:.5em;
+    position: relative;
+    top: 20px;
+}
 #b{
     background-color: black;
     border-style:none;
@@ -77,6 +119,14 @@ div{
     position: relative;
     top: 20px;
 }
+.button{
+    border-style: none;
+    background-color: white;
+    font-size: 16px;
+    padding: 1em 1em;
+    border-radius: 1em;
+
+}
 [contenteditable]{
     outline:none;
 }
@@ -85,4 +135,6 @@ button{
 }
 body{
     background-color: orange;
+    user-select: none;
+    -moz-user-select: nonte;
 }
