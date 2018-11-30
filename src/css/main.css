@@ -1,8 +1,8 @@
 canvas{
     background-color: white;
-    border:1px solid black;
+    border:0px solid black;
     position:relative;
-    left: 50px;
+    left: 100px;
 }
 
 div{
@@ -13,14 +13,33 @@ div{
     padding: 1em;
     margin: 1em;
 }
-#name{
+#ban{
+    position: relative;
+    left: 100px;
+    top: 0px;
+    display:inline-block;
+    width:400px;
+    height:200px;
+}
+
+#oth{
+    position: relative;
+    left: 100px;
+    top: -0px;
+    display:inline-block;
+    width:396px;
+    height:200px;
+}
+#nm{
     background-color: white;
     text-align: center;
+    font-family: Sans-serif;
 }
 
 #size{
     background-color: white;
     text-align: center;
+    font-family: sans-serif;
 }
 
 #bl{
@@ -77,6 +96,15 @@ div{
     position: relative;
     top: 20px;
 }
+#tools{
+    width: 60em;
+    height: 5em;
+    border: .5em;
+}
+#spacer{
+    background-color: #ff5c13;
+    border-color: #ff5c13;
+}
 [contenteditable]{
     outline:none;
 }
@@ -84,5 +112,5 @@ button{
     display:inline-block;
 }
 body{
-    background-color: orange;
+    background-color: #ff5c13;
 }

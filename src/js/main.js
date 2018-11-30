@@ -15,7 +15,7 @@ canvas.addEventListener('mousemove', _ =>{
     let posy = mousePos.y;
     draw(canvas, posx, posy, bsize);
 });
-let bsize = 4;
+let bsize = 12;
 //----------------------------------------------------------------------------------
 //Canvas Events------------------------------------------------------------
 function down(){
@@ -39,6 +39,9 @@ function draw(canvas, posx, posy){
         context.fillRect(posx, posy, bsize, bsize);
     }
 }
+function go(l){
+    window.location.replace(l);
+}
 //---------------------------------------------------------------------------
 //--Tools-------------------------------------------------------------
 size.onclick = e =>{ size.innerText = " "}
@@ -50,6 +53,7 @@ size.onkeypress = _ =>{
         return false;
     }
 }
+name.onkeypress = _ =>{if(_.key === 'Enter'){return false;}}
 
 function cls(){
     console.log('Cleared!');
