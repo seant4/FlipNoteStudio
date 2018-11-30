@@ -1,2 +1,1 @@
-# FlipNoteStudio
-FlipNote Studio
+# MovingNotebook: Studio
