@@ -1,2 +1,3 @@
-# FlipNoteStudio
-FlipNote Studio
+# MovingNotebook: Studio
+Interactive painting program written in javascript
+Animation to come

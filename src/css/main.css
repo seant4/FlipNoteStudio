@@ -1,6 +1,7 @@
 canvas{
     background-color: white;
     border:0px solid black;
+    border-radius: 1em;
     position:relative;
     left: 100px;
 }
@@ -9,37 +10,39 @@ div{
     background: white;
     width: 5em;
     display:inline-block;
-    border-style:solid;
+    border-style: 1px solid;
     padding: 1em;
     margin: 1em;
 }
-#ban{
-    position: relative;
-    left: 100px;
-    top: 0px;
-    display:inline-block;
-    width:400px;
-    height:200px;
+#imgs{
+    background-color: transparent;
 }
-
-#oth{
+#ban{
+    width:60%;
+    height:60%;
+}
+#spacer{
     position: relative;
-    left: 100px;
-    top: -0px;
-    display:inline-block;
-    width:396px;
-    height:200px;
+    left: 5px;
+    background-color: orange;
+    padding: 0em;
+    border: orange;
+    width: 40em;
 }
 #nm{
     background-color: white;
     text-align: center;
-    font-family: Sans-serif;
-}
-
-#size{
-    background-color: white;
-    text-align: center;
     font-family: sans-serif;
+    border-radius: 1em;
+}
+#size{
+    border-radius: 1em;
+    font-family: sans-serif;
+}
+#colors{
+    display: inline-block;
+    width: 30em;
+    height: 1em;
 }
 
 #bl{
@@ -78,6 +81,33 @@ div{
     position: relative;
     top: 20px;
 }
+#br{
+    background-color: brown;
+    border-style:none;
+    width:.5em;
+    display:inline-block;
+    padding:.5em;
+    position: relative;
+    top: 20px;
+}
+#pr{
+    background-color: purple;
+    border-style:none;
+    width:.5em;
+    display:inline-block;
+    padding:.5em;
+    position: relative;
+    top: 20px;
+}
+#pi{
+    background-color: pink;
+    border-style:none;
+    width:.5em;
+    display:inline-block;
+    padding:.5em;
+    position: relative;
+    top: 20px;
+}
 #b{
     background-color: black;
     border-style:none;
@@ -96,14 +126,19 @@ div{
     position: relative;
     top: 20px;
 }
-#tools{
-    width: 60em;
-    height: 5em;
-    border: .5em;
+#ban{
+    position: relative;
+    width: 500px;
+    height: 60%;
+    left: 90px;
 }
-#spacer{
-    background-color: #ff5c13;
-    border-color: #ff5c13;
+.button{
+    border-style: none;
+    background-color: white;
+    font-size: 16px;
+    padding: 1em 1em;
+    border-radius: 1em;
+
 }
 [contenteditable]{
     outline:none;
@@ -112,5 +147,7 @@ button{
     display:inline-block;
 }
 body{
-    background-color: #ff5c13;
+    background-color: orange;
+    user-select: none;
+    -moz-user-select: nonte;
 }

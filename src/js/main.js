@@ -1,5 +1,7 @@
 //Defining---------------------------------------------------------------------
 let canvas = document.querySelector('#main');
+canvas.width = canvas.offsetWidth;
+canvas.height = canvas.offsetHeight;
 let size = document.querySelector('#size');
 let context = canvas.getContext('2d');
 let sv = document.querySelector('save');
@@ -9,6 +11,8 @@ let canvasName = size;
 let md = false;
 canvas.addEventListener('mousedown', down);
 canvas.addEventListener('mouseup', toggledraw);
+canvas.addEventListener('mouseout', toggledraw);
+canvas.addEventListener('resize', resize, false);
 canvas.addEventListener('mousemove', _ =>{
     let mousePos = getMousePos (canvas, _);
     let posx = mousePos.x;
@@ -17,7 +21,16 @@ canvas.addEventListener('mousemove', _ =>{
 });
 let bsize = 12;
 //----------------------------------------------------------------------------------
+context.beginPath();
+context.rect(0, 0, 2000, 2000);
+context.fillStyle = "White";
+context.fill();
+setColor("Black");
 //Canvas Events------------------------------------------------------------
+function resize(){
+    context.canvas.width = window.innderWidth;
+    context.canvas.height = window.innerHeight;
+}
 function down(){
     md = true;
 }
