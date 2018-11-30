@@ -3,7 +3,8 @@ canvas{
     border:0px solid black;
     border-radius: 1em;
     position:relative;
-    left: 100px;
+    left: 20px;
+    top: -150px;
 }
 
 div{
@@ -14,7 +15,15 @@ div{
     padding: 1em;
     margin: 1em;
 }
+#tools{
+    position: relative;
+    left: 4em;
+    width: 75em;
+}
 #imgs{
+    position: relative;
+    top: -28px;
+    left: -50px;
     background-color: transparent;
 }
 #ban{
@@ -30,12 +39,14 @@ div{
     width: 40em;
 }
 #nm{
+    border: solid black;
     background-color: white;
     text-align: center;
     font-family: sans-serif;
     border-radius: 1em;
 }
 #size{
+    border: solid black;
     border-radius: 1em;
     font-family: sans-serif;
 }
@@ -133,7 +144,7 @@ div{
     left: 90px;
 }
 .button{
-    border-style: none;
+    border-style: solid black;
     background-color: white;
     font-size: 16px;
     padding: 1em 1em;
@@ -143,7 +154,9 @@ div{
 [contenteditable]{
     outline:none;
 }
+
 button{
+    outline: none;
     display:inline-block;
 }
 body{
