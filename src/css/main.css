@@ -2,9 +2,9 @@ canvas{
     background-color: white;
     border:0px solid black;
     border-radius: 1em;
-    position:absolute;
-    left: 4em;
-    top: 150px;
+    position:relative;
+    left: 17em;
+    top: 0px;
 }
 
 div{
@@ -18,20 +18,11 @@ div{
 #tools{
     border-radius: 1em;
     position: relative;
-    left: 4em;
+    left: 18em;
     width: 75em;
+    top: 1em;
 }
-#imgs{
-    position: relative;
-    top: -2.5em;
-    left: 4em;
-    background-color: transparent;
-}
-#ban{
-    border-radius: 1em;
-    width:60%;
-    height:60%;
-}
+
 #spacer{
     position: relative;
     left: 5px;
