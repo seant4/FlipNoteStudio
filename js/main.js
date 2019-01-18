@@ -17,9 +17,9 @@ canvas.addEventListener('mousemove', _ =>{
     let mousePos = getMousePos (canvas, _);
     let posx = mousePos.x;
     let posy = mousePos.y;
-    draw(canvas, posx, posy, bsize);
+    draw(canvas, posx, posy);
 });
-let bsize = 12;
+context.lineWidth = 12;
 //----------------------------------------------------------------------------------
 context.beginPath();
 context.rect(0, 0, 2000, 2000);
@@ -32,6 +32,7 @@ function resize(){
     context.canvas.height = window.innerHeight;
 }
 function down(){
+    context.beginPath();
     md = true;
 }
 
@@ -49,7 +50,9 @@ function getMousePos(canvas, _){
 
 function draw(canvas, posx, posy){
     if(md){
-        context.fillRect(posx, posy, bsize, bsize);
+        //context.moveTo(posx, posy);
+        context.lineTo(posx, posy);
+        context.stroke();
     }
 }
 function go(l){
@@ -62,7 +65,7 @@ name.onclick = e =>{name.innerText = " "}
 
 size.onkeypress = _ =>{
     if(_.key === 'Enter'){
-        bsize = size.innerText;
+        context.lineWidth = size.innerText;
         return false;
     }
 }
@@ -94,8 +97,5 @@ function dow(){
     link.click();
 }
 
-function setColor(c){
-    context.fillStyle = c;
-    console.log("Color set to: " + c);
-}
+function setColor(c){context.strokeStyle = c;}
 //-------------------------------------------------------------------------
