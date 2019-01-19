@@ -3,7 +3,7 @@ canvas{
     border:0px solid black;
     border-radius: 1em;
     position:relative;
-    left: 14em;
+    left: 18em;
     top: 0px;
 }
 
@@ -18,7 +18,7 @@ div{
 #tools{
     border-radius: 1em;
     position: relative;
-    left: 15em;
+    left: 19em;
     width: 75em;
     top: 1em;
 }
